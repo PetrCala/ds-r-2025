@@ -2,4 +2,6 @@
 
 ## Overview
 
-Go to [this link](https://mybinder.org/v2/gh/PetrCala/ds-r-2025/HEAD) to open the lesson notebooks
+Go to [this link][binder] to open the lesson notebooks
+
+[binder]: https://mybinder.org/v2/gh/PetrCala/ds-r-2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fshared%2Fwelcome.ipynb
