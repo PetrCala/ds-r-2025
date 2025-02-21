@@ -2,3 +2,7 @@ local/
 !shared/
 **/*.DS_Store
 *.log
+
+# Python
+**/*.venv
+**/*venv
