@@ -1,2 +1,0 @@
-Project link on Binder
-https://mybinder.org/v2/gh/PetrCala/ds-r-2025/HEAD

@@ -4,4 +4,4 @@
 
 Go to [this link][binder] to open the lesson notebooks
 
-[binder]: https://mybinder.org/v2/gh/PetrCala/ds-r-2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fshared%2Fwelcome.ipynb
+[binder]: https://mybinder.org/v2/gh/PetrCala/ds-r-2025/HEAD?urlpath=%2Fdoc%2Ftree%2Flessons%2Fwelcome.ipynb
