@@ -6,7 +6,8 @@ import nbformat
 # Define the replacement dictionary: {'text_to_find': 'text_to_replace'}
 REPLACEMENTS = {
   # Example replacements
-  r"---\ntitle:\s*\"(.+?)\"\nauthor:\s*\"(.+?)\"\ndate:\s*\"(.+?)\"\n---": r"# \1\n**Author:** \2  \n**Date:** \3" # This replaces the YAML header with markdown headers
+  # r"---\ntitle:\s*\"(.+?)\"\nauthor:\s*\"(.+?)\"\ndate:\s*\"(.+?)\"\n---": r"# \1\n**Author:** \2  \n**Date:** \3", # This replaces the YAML header with markdown headers
+  r"\*\*Author:\*\* .+?\s+\*\*Date:\*\* .+": "**Author:** Petr Čala  \n**Date:** 2025-03-05"
   # Add more replacements as needed
 }
 
