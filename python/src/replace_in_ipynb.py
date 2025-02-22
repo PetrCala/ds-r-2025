@@ -5,8 +5,9 @@ import nbformat
 
 # Define the replacement dictionary: {'text_to_find': 'text_to_replace'}
 REPLACEMENTS = {
-    r"---\ntitle:\s*\"(.+?)\"\nauthor:\s*\"(.+?)\"\ndate:\s*\"(.+?)\"\n---": r"# \1\n**Author:** \2  \n**Date:** \3"
-    # Add more replacements as needed
+  # Example replacements
+  r"---\ntitle:\s*\"(.+?)\"\nauthor:\s*\"(.+?)\"\ndate:\s*\"(.+?)\"\n---": r"# \1\n**Author:** \2  \n**Date:** \3" # This replaces the YAML header with markdown headers
+  # Add more replacements as needed
 }
 
 def process_notebook(file_path):
