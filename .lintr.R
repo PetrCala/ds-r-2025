@@ -10,7 +10,7 @@ linters <- c(
     commas_linter = lintr::commas_linter(allow_trailing = FALSE),
     # Check that all comments are preceded by a space
     object_name_linter = lintr::object_name_linter(
-      styles = c("snake_case", "SNAKE_CASE", "dotted.case")
+      styles = c("snake_case", "SNAKE_CASE", "dotted.case", "camelCase")
     ),
     # Disable the default lintr object usage - replace with box imports
     object_usage_linter = NULL,
