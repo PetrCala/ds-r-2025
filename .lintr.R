@@ -30,7 +30,9 @@ linters <- c(
         defaults = lintr::default_undesirable_functions,
         options = NULL # We use options extensively through ARTMA options
       )
-    )
+    ),
+    # Disable the implicit integer linter
+    implicit_integer_linter = NULL
   )
 )
 
