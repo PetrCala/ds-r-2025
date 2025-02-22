@@ -32,7 +32,9 @@ linters <- c(
       )
     ),
     # Disable the implicit integer linter
-    implicit_integer_linter = NULL
+    implicit_integer_linter = NULL,
+    # Trailing whitespace does not matter
+    trailing_whitespace_linter = NULL,
   )
 )
 
