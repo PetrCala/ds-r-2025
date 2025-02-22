@@ -28,13 +28,13 @@ linters <- c(
     undesirable_function_linter = lintr::undesirable_function_linter(
       fun = lintr::modify_defaults(
         defaults = lintr::default_undesirable_functions,
-        options = NULL # We use options extensively through ARTMA options
+        library = NULL # The library function is great for simple demonstrations
       )
     ),
     # Disable the implicit integer linter
     implicit_integer_linter = NULL,
     # Trailing whitespace does not matter
-    trailing_whitespace_linter = NULL,
+    trailing_whitespace_linter = NULL
   )
 )
 
