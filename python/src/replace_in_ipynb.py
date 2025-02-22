@@ -1,17 +1,16 @@
+import re
 import os
 import sys
-import json
 import nbformat
 
 # Define the replacement dictionary: {'text_to_find': 'text_to_replace'}
 REPLACEMENTS = {
-    "old_text1": "new_text1",
-    "old_text2": "new_text2",
+    r"---\ntitle:\s*\"(.+?)\"\nauthor:\s*\"(.+?)\"\ndate:\s*\"(.+?)\"\n---": r"# \1\n**Author:** \2  \n**Date:** \3"
     # Add more replacements as needed
 }
 
 def process_notebook(file_path):
-    """Opens a .ipynb file, replaces text based on REPLACEMENTS dictionary, and saves it back."""
+    """Opens a .ipynb file, applies regex replacements, and saves it back."""
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             notebook = nbformat.read(f, as_version=4)
@@ -20,9 +19,10 @@ def process_notebook(file_path):
         for cell in notebook["cells"]:
             if cell["cell_type"] in {"code", "markdown"}:
                 cell_source = cell["source"]
-                for old_text, new_text in REPLACEMENTS.items():
-                    if old_text in cell_source:
-                        cell["source"] = cell_source.replace(old_text, new_text)
+                for pattern, replacement in REPLACEMENTS.items():
+                    new_source = re.sub(pattern, replacement, cell_source, flags=re.MULTILINE)
+                    if new_source != cell_source:
+                        cell["source"] = new_source
                         modified = True
         
         if modified:
