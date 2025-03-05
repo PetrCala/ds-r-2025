@@ -1,0 +1,2 @@
+- Process data - maybe a dicourse analysis, migration numbers in the EU, text frequency analysis, interviews
+- Extracting comments/posts/articles from an online resource, and subsequent analysis (frequency, description,...) - e.g., Instagram comments, youtube transcripts
