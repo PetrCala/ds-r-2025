@@ -1,0 +1,10 @@
+- Topic: Transcript analysis
+- Details: Extract speeches from the white house public resources (websites), and run a transcript analysis on them
+- Data source: Online websites
+
+
+General:
+https://obamawhitehouse.archives.gov
+
+Speeches & Remarks:
+https://obamawhitehouse.archives.gov/briefing-room/speeches-and-remarks
